@@ -1,6 +1,5 @@
 ---
-title: <%tp.file.title%>
+title: NoSQL
 draft: false
 tags:
 ---
-	
