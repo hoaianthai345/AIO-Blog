@@ -35,7 +35,7 @@ Khi bạn xây dựng một ứng dụng cần lưu trữ dữ liệu, bạn s�
 | **Procedures** | Quy trình – hướng dẫn người dùng cách thao tác với database |
 | **Access Language** | Ngôn ngữ truy vấn (ví dụ: SQL hoặc MQL trong MongoDB) giúp tương tác với dữ liệu |
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image.png)
+![image.png](./images/NoSQL/image.png)
 
 Vậy nên, database là một hệ sinh thái chứ không chỉ là chỗ chứa. Nó vừa có phần cứng mạnh mẽ, phần mềm điều khiển, quy trình thao tác chuẩn hóa và một ngôn ngữ để tương tác.
 
@@ -45,7 +45,7 @@ Cho đến lúc này, ta đã biết database là nơi lưu trữ thông tin có
 
 DBMS là một phần mềm trung gian giữa người dùng (hoặc ứng dụng) và nơi lưu trữ dữ liệu. Nó giống như người quản lý thư viện – bạn không cần tự mình đi lục tung từng kệ sách, mà chỉ cần yêu cầu, và người quản lý sẽ lấy đúng sách cho bạn. Không chỉ vậy, DBMS còn chịu trách nhiệm **định nghĩa**, **ghi nhận**, **truy vấn**, **cập nhật** và **quản lý toàn bộ dữ liệu**.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%201.png)
+![image.png](./images/NoSQL/image%201.png)
 
 Trong sơ đồ ở trên, bạn có thể thấy:
 
@@ -83,7 +83,7 @@ Ví dụ đơn giản thế này:
 2. Dò theo bảng điểm để tìm các dòng có cùng `studentID`,
 3. Kết nối sang bảng môn học để lấy `subjectName`.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%202.png)
+![image.png](./images/NoSQL/image%202.png)
 
 Hệ quản trị như MySQL hay PostgreSQL sẽ dùng SQL để xử lý các truy vấn như vậy. SQL rất mạnh mẽ trong việc đảm bảo tính toàn vẹn dữ liệu, tránh trùng lặp, và phù hợp với các hệ thống nghiệp vụ có cấu trúc rõ ràng (như ngân hàng, quản lý nhân sự, kế toán...).
 
@@ -109,7 +109,7 @@ Tên gọi **NoSQL** không có nghĩa là "không dùng SQL", mà là:
 - **No Relational**: không dựa trên quan hệ giữa bảng
 - **No RDBMS**: không cần hệ quản trị kiểu quan hệ
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%203.png)
+![image.png](./images/NoSQL/image%203.png)
 
 ## 6. NoSQL Database Types?
 
@@ -145,7 +145,7 @@ Dưới đây là 3 cách lưu trữ dữ liệu NoSQL phổ biến nhất:
 
 Hệ thống như Redis dùng mô hình này để lưu cache cực nhanh – lý tưởng cho những thao tác đọc-ghi tốc độ cao, đơn giản.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%204.png)
+![image.png](./images/NoSQL/image%204.png)
 
 > **Cache** (phát âm giống "két") là một vùng nhớ tạm, dùng để **lưu lại những dữ liệu được truy cập thường xuyên**, để lần sau khi cần thì lấy ra nhanh hơn, **không phải truy xuất lại từ đầu**.
 > 
@@ -171,7 +171,7 @@ Một dạng đặc biệt trong thế giới NoSQL chính là **Graph Database*
 
 **Ví dụ** 
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%205.png)
+![image.png](./images/NoSQL/image%205.png)
 
 Giả sử bạn có 3 thực thể:
 
@@ -203,7 +203,7 @@ Nhưng với **Graph Database**, bạn chỉ cần dựng đồ thị:
 
 Một số công cụ phổ biến là **Neo4j**, **ArangoDB**, **Amazon Neptune**. **Bảng xếp hạng các hệ quản trị Graph Database** :
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/6e86df0e-c284-4eb0-b021-cfe44131afa9.png)
+![image.png](./images/NoSQL/6e86df0e-c284-4eb0-b021-cfe44131afa9.png)
 
 Source [https://db-engines.com/en/ranking/graph+dbms](https://db-engines.com/en/ranking/graph+dbms)
 
@@ -237,13 +237,13 @@ Tài liệu trên chứa đủ thông tin của một người dùng: tên, emai
 - **BSON** là phiên bản nhị phân tối ưu của JSON, dùng trong MongoDB.
 - **XML** cũng được dùng để biểu diễn cấu trúc, đặc biệt trong các ứng dụng như **gán nhãn dữ liệu hình ảnh (image annotation)**.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%206.png)
+![image.png](./images/NoSQL/image%206.png)
 
 Trong các dự án AI, dữ liệu được lưu dưới dạng ảnh + file XML mô tả vùng chứa đối tượng. Đây là minh chứng sống động cho việc document không cần "chia cột" — mỗi tệp là một đơn vị độc lập.
 
 **Bảng xếp hạng các hệ quản trị Documents Database** :
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%207.png)
+![image.png](./images/NoSQL/image%207.png)
 
 Source: [https://db-engines.com/en/ranking/document+store](https://db-engines.com/en/ranking/document+store)
 
@@ -263,7 +263,7 @@ Thay vì chia nhỏ thông tin thành nhiều bảng như trong SQL, MongoDB cho
 > - **Collection** là ngăn kéo chứa từng loại hồ sơ
 > - **Document** là từng tờ hồ sơ chi tiết
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%208.png)
+![image.png](./images/NoSQL/image%208.png)
 
 ## 2. Documents in MongoDB
 
@@ -293,7 +293,7 @@ Các field trong MongoDB có thể chứa nhiều loại dữ liệu khác nhau:
 - **Date**: ngày giờ
 - **Array, Object (nested document)**
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%209.png)
+![image.png](./images/NoSQL/image%209.png)
 
 **Ví dụ:**
 
@@ -369,7 +369,7 @@ MongoDB là một **hệ sinh thái** gồm nhiều phiên bản, công cụ và
 
 ### Ba phiên bản của MongoDB
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2010.png)
+![image.png](./images/NoSQL/image%2010.png)
 
 - **Community Edition** là lựa chọn phổ biến nhất cho sinh viên, developer cá nhân, hoặc các startup nhỏ. Nó miễn phí, mã nguồn mở và đầy đủ tính năng cốt lõi. Nếu bạn đang học MongoDB hoặc làm side project, đây là lựa chọn tối ưu.
 - **Enterprise Edition** được thiết kế cho doanh nghiệp lớn. Phiên bản này bổ sung nhiều tính năng như bảo mật nâng cao, audit log, tích hợp LDAP, cũng như hỗ trợ kỹ thuật chuyên sâu từ MongoDB Inc.
@@ -382,7 +382,7 @@ MongoDB là một **hệ sinh thái** gồm nhiều phiên bản, công cụ và
 - **BI Connectors** là cầu nối giữa MongoDB và các công cụ phân tích như Tableau hoặc Power BI. Dữ liệu Mongo dạng document có thể được ánh xạ thành bảng (relational view) để phân tích trực quan.
 - **Compass** là GUI chính thức của MongoDB – một giao diện đồ họa giúp bạn quản lý dữ liệu mà không cần viết lệnh. Bạn có thể xem collection, chỉnh sửa document, tạo index, vẽ biểu đồ query performance… mà không cần biết Mongo Shell.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2011.png)
+![image.png](./images/NoSQL/image%2011.png)
 
 # III. Installation
 
@@ -420,17 +420,17 @@ Bạn sẽ cần cấu hình vài thông tin cơ bản:
 - **Additional Settings:** Mặc định là `MongoDB 8.0`, chưa có backup – phù hợp với nhu cầu sandbox học tập.
 - **Cluster Name:** Đặt tên dễ nhớ, ví dụ `Cluster0`.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2012.png)
+![image.png](./images/NoSQL/image%2012.png)
 
 Nhấn **Create Cluster**, và chỉ sau vài phút là bạn đã có một MongoDB cloud sẵn sàng kết nối.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2013.png)
+![image.png](./images/NoSQL/image%2013.png)
 
 ### **Bước 3 – Tạo người dùng Database mới**
 
 Sau khi bạn đã tạo cluster và thiết lập IP cho phép truy cập, bước tiếp theo là tạo một **người dùng database** – hay còn gọi là **database user**.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2014.png)
+![image.png](./images/NoSQL/image%2014.png)
 
 Bạn sẽ thấy form gồm:
 
@@ -442,7 +442,7 @@ Bạn sẽ thấy form gồm:
     - **Atlas admin**
     - Hoặc custom (tuỳ chỉnh theo từng database)
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2015.png)
+![image.png](./images/NoSQL/image%2015.png)
 
 > Giả sử bạn đang xây dựng một ứng dụng quản lý sách, bạn có thể tạo:
 > 
@@ -455,7 +455,7 @@ MongoDB Atlas **không cho phép bất kỳ ai trên Internet truy cập vào da
 
 Điều này giống như bạn đang xây tường bao quanh cơ sở dữ liệu của mình – chỉ mở cửa **cho những địa chỉ đáng tin cậy**.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2016.png)
+![image.png](./images/NoSQL/image%2016.png)
 
 **Có 3 lựa chọn chính khi thêm IP:**
 
@@ -491,7 +491,7 @@ Bạn có thể cài mongosh riêng hoặc dùng sẵn trong MongoDB Compass.
 
 Rất phù hợp cho người mới bắt đầu hoặc khi cần trình bày dữ liệu trực quan.
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2017.png)
+![image.png](./images/NoSQL/image%2017.png)
 
 ### **MongoDB Drivers** – Kết nối database từ ứng dụng
 
@@ -691,9 +691,9 @@ db.student.find(
 )
 ```
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2018.png)
+![image.png](./images/NoSQL/image%2018.png)
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2019.png)
+![image.png](./images/NoSQL/image%2019.png)
 
 ## 5. Comparison Operators trong MongoDB
 
@@ -1391,7 +1391,7 @@ Ghi đè địa chỉ cũ thành `"Ho Chi Minh"`.
 
 # Tổng kết
 
-![image.png](quartz/content/NoSQL%202281187f7c6a80368dbccbb8488bad12/image%2020.png)
+![image.png](./images/NoSQL/image%2020.png)
 
 # Quiz
 
