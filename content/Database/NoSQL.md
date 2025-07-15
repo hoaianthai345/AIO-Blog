@@ -3,8 +3,11 @@ title: NoSQL
 ---
 
 Date: 03/07/2025
-Day/Week: Module 2, Thu, Week1
-Status: Not started
+
+Day/Week: Module 2, Week2, Thu
+
+Author: An Hoài Thái
+
 Tag: AIO
 
 # I. Introduction to NoSQL
